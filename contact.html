@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neha</title>
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+   
+    <!---------first page--------->
+    <section class="header">
+        <!--menu(navbar)-->
+        <nav>
+            <a href="index.html"><img src="img/logo2.png" alt=""></a>
+            <div class="navlinks" id="navlink">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="content.html">EXPLORE</a></li>
+                    <li><a href="age.html">AGE CALCULATOR</a></li>
+                    <li><a href="weight.html">WEIGHT CALCULATOR</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <video class="vid" autoplay loop muted>
+            <source src="img/bgvideo.mp4" type="video/mp4">
+        </video>
+       
+    </section>
+    <!--form-->
+    <div class="formwrap">
+        <form >
+            <div class="formd" id="name">
+                <h2>Contact Us!</h2>
+               
+                <input type="text" name="fname" id="fname" required placeholder="Enter Your Name">
+                <div class="error"></div>
+            </div>
+            <div class="formd" id="email">
+                <input type="email" name="email" id="emailid" required placeholder="Enter  email address">
+                <div class="error"></div>
+            </div>
+            <div class="formd" id="phone">
+                <input type="number" name="phone" id="phoneno" placeholder="Enter Phone Number">
+                <div class="error"></div>
+            </div>
+            <div class="formd" id="password">
+                <input type="password" name="password" id="pass" required placeholder="Password">
+                <div class="error"></div>
+            </div>
+            <div class="formd" id="cpassword">
+                <input type="password" name="cpassword" id="cpass" required placeholder="ConfirmPassword">
+                <div class="error"></div>
+            </div>
+            <div class="formd" >
+                <input id="mes" type="text" name="cpassword" required placeholder="Enter your Message here">
+            </div>
+
+            
+    
+        </form>
+        <div class="formd" id="submit">
+            <button onclick="validate()">Submit</button>
+        </div>
+
+    </div>
+    
+    
+    <!--form close-->
+   
+    
+</body>
+<script>
+    var navlink = document.getElementById("navlink");
+    function showmenu() {
+        navlink.style.right = "0";
+        navlink.style.display = "flex";
+    }
+    function hidemenu() {
+        navlink.style.right = "-200px";
+        navlink.style.display = "none";
+        location.reload();
+    }
+</script>
+<script>
+    function error(id, errormsg) {
+        element = document.getElementById(id);
+        element.getElementsByClassName('error')[0].innerHTML = errormsg;
+    }
+    function validate() {
+        var returnbool = true;
+        var name = document.getElementById("fname").value;
+        if (name.length < 3) {
+            error("name", "*Name length is too short");
+            returnbool = false;
+        }
+        var email = document.getElementById("emailid").value;
+        if (email.length > 30) {
+            error("email", "*Email length is too long");
+            returnbool = false;
+        }
+        var phone = document.getElementById("phoneno").value;
+        if (phone.length != 10) {
+            error("phone", "*Phone Number should be ten digits");
+            returnbool = false;
+        }
+        var pass = document.getElementById("pass").value;
+        if (pass.length < 5) {
+            error("password", "*Password Length is too Small");
+            returnbool = false;
+        }
+        var cpass = document.getElementById("cpass").value;
+        if (cpass != pass) {
+            error("cpassword", "*Password did not match");
+            returnbool = false;
+        }
+        if (returnbool) {
+            alert("We Received your Valuable Message");
+
+        }
+    }
+</script>
+
+</html>

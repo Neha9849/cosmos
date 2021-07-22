@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            Mercury
+        </h1>
+        <img src="../img/mercury.jpg" alt="">
+    </div>
+    <div class="intro">
+        <h2>Why We Study Mercury</h2>
+
+        Mercury doesn't always receive a lot of attention. The innermost planet to the Sun is smaller than both
+        Jupiter’s moon Ganymede and Saturn’s moon Titan. It has been overshadowed by worlds like Mars that may have once
+        harbored life, and planets that are solar systems unto themselves like Jupiter and Saturn.
+        <br>
+        <br>
+
+        Mercury is a world of extremes. Its surface appears old, cratered, and undisturbed by recent geologic activity.
+        Yet it has a magnetic field, which is normally caused by a molten core that should, in turn, cause surface
+        changes. Thanks to the nearby Sun, Mercury’s surface temperatures reach 430 degrees Celsius (800 degrees
+        Fahrenheit)—yet like our Moon, water ice exists inside permanently shadowed craters at the poles.
+        <br><br>
+        
+        Mercury is particularly interesting to scientists who study exoplanets, planets that orbit other stars.
+        Thousands of known exoplanets orbit extremely close to their stars. By studying Mercury right here in our
+        backyard, we can better understand what these close-orbiting worlds might be like.
+            <br><br>
+        Mercury’s core makes up 85 percent of the planet’s volume—much more than Earth’s, which makes up just 15
+        percent. Scientists aren't sure why, and the answer may help us understand the possibilities for different types
+        of planets and how our solar system evolved.
+        <br><br>
+    </div>
+    <iframe title="Mercury" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/mercury"></iframe>
+
+    <div class="facts">
+        <h2>Mercury Facts</h2>
+        <p><strong>Surface temperature</strong>: -184<strong>°</strong>C (-300<strong>°</strong>F) to
+            465<strong>°</strong>C (869<strong>°</strong>F)<br><strong>Average distance from Sun</strong>: 58 million
+            kilometers (36 million miles), or 61% closer to the Sun than Earth <br><strong>Diameter</strong>: 4,879
+            kilometers (3,032 miles), Earth is 2.6 times wider<br><strong>Volume</strong>: 61 billion km3 (15 billion
+            mi3), Mercury could fit inside Earth 16.4 times<br><strong>Gravity</strong>: 3.7 m/s², or 38% that of
+            Earth’s<br><strong>Solar day</strong>: 58.6 Earth days<br><strong>Solar year</strong>: 88 Earth
+            days<br><strong>Atmosphere</strong>: Negligible</p>
+    </div>
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+           navlink.style.right = "0px";
+            navlink.style.display="flex";
+        }
+        function hidemenu() {
+           navlink.style.right = "-200px";
+           navlink.style.display="none";
+           location.reload();
+        }
+    </script>
+</body>
+
+</html>

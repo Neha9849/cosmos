@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neha</title>
+    <link rel="stylesheet" href="stylesheets/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!---------first page--------->
+    <section class="header">
+        <!--menu(navbar)-->
+        <nav>
+            <a href="index.html"><img src="img/logo2.png" alt=""></a>
+            <div class="navlinks" id="navlink">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="content.html">EXPLORE</a></li>
+                    <li><a href="age.html">AGE CALCULATOR</a></li>
+                    <li><a href="weight.html">WEIGHT CALCULATOR</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+    </section>
+    <video class="vid" autoplay loop muted>
+        <source src="img/pexels-kindel-media-7649283.mp4" type="video/mp4">
+    </video>
+ <div class="bgc"></div>
+    <div class="box" style="color: rgb(225, 215, 235);">
+
+        <h1>About Us</h1>
+        <br>
+        <h2>Our Vision</h2>
+        Know the cosmos and our place within it.
+         <br><br>
+        <h2>Our Mission</h2>
+        Empowering the world's citizens to advance space science and exploration.
+    </div>
+
+
+</body>
+<script>
+    var navlink = document.getElementById("navlink");
+    function showmenu() {
+        navlink.style.right = "0";
+        navlink.style.display = "flex";
+    }
+    function hidemenu() {
+        navlink.style.right = "-200px";
+        navlink.style.display = "none";
+        location.reload();
+    }
+</script>
+
+</html>

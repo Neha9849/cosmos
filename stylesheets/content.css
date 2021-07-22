@@ -1,0 +1,202 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+body{    background-color: black;}
+/*----------navbar---------*/
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    z-index: 5;
+}
+@media (min-width:700px) {
+    nav{
+        background-color: rgba(0, 0, 0, 0.822);
+        position: sticky;
+        top: 0;
+        padding: 7px 1%;
+    }
+}
+nav img{
+    width:150px;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    font-family: 'Baloo Tammudu 2', cursive;
+
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height:2px ;
+    background:rgb(93, 37, 167) ;
+    display: block;
+    margin: auto;
+    transition:width 1s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+    color: white;
+}
+
+/*---------title---------*/
+.title{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.503),rgba(0, 0, 0, 0.603)), url(../img/solar\ system.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    display: inline-block;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    
+}
+.title h1{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size:xxx-large;
+
+}
+.titlematter{
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(247, 242, 242);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    background-image:linear-gradient(rgba(77, 39, 113, 0.503),rgba(52, 38, 78, 0.603)),url(../img/19333449.jpg);
+    background-size: cover;
+    /*background-position: right;*/
+    background-repeat: no-repeat;
+
+}
+.box{
+    width: 600px;
+    height:220bpx;
+   /*background-color: #edf2f7;*/
+  background-color: rgba(0, 0, 0, 0.986);
+  color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15vh;
+    padding: 1rem;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    /*border: 2px solid rgba(255, 255, 255, 0.272);*/
+    /*box-shadow: 5px 5px rgba(255, 255, 255, 0.272);*/
+   /* box-shadow: 2px 2px  2px rgba(128, 128, 128, 0.925);*/
+}
+.boximg img{
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 0.7rem;
+    transition: transform .5s ease;
+    margin-right:20px ;
+}    
+
+/*.box:hover{
+    background-color: #252627ef;
+   
+}*/
+.boximg img:hover{
+    box-shadow:5px 5px 5px rgb(83, 80, 80);
+    opacity: 0.7; 
+}
+a{
+    /*color:#037cc2;*/
+    color: rgba(255, 127, 80, 0.898);
+    text-decoration: none;
+}  
+a:hover{
+    text-decoration: underline;
+} 
+h3{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}   
+@media(max-width:700px){
+    .navlinks{
+        display: none;
+    }
+
+    nav{
+        background-color: black;
+        position: unset;
+    }
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks{
+        position: absolute;
+        background-color:rgba(39, 36, 36, 0.993);
+        height:100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        cursor: pointer;
+        color:white;
+        font-size: 22px;
+
+    }
+    .navlinks ul{
+        padding: 10px;
+    }
+    .box{
+        width:fit-content;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    .titlematter{
+        margin: 50px 0;
+        padding:0 20px;
+       width: 100%;
+    }
+}  
+.end{
+    height: 600px;
+    background-image:linear-gradient(rgba(52, 38, 78, 0.603),rgba(52, 38, 78, 0.603)),url(../img/19333449.jpg);
+
+}                                                                                                                      

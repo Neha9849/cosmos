@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            Earth, Our Home Planet
+        </h1>
+        <img src="../img/earth.jpg" alt="">
+    </div>
+    <div class="intro">
+        <h2>The Only Home We Have</h2>
+        <p>
+            Of all the beautiful images humans and robotic spacecraft have captured while exploring our solar system,
+            perhaps none are more powerful than pictures of Earth. It can be profound and humbling to see our planet
+            from deep space, as Planetary Society co-founder Carl Sagan eloquently explained in his 1994 book “Pale Blue
+            Dot.”
+            <br><br>
+
+            Astronauts who travel to space experience what is known as the “overview effect” upon seeing Earth from
+            afar. They often return home feeling a deep responsibility to preserve and cherish our planet. We know of no
+            other habitable worlds like Earth, nor do we currently have the technology to terraform a world like Mars to
+            make it Earth-like.
+              <br><br>
+            Earth sits in our Sun’s habitable zone, the not-too-hot, not-too-cold region around a star where liquid
+            water can exist on a planet’s surface. Our planet’s churning liquid-metal core generates a magnetic field
+            that shields us from most of the Sun’s harmful radiation. A dense, oxygen-rich atmosphere provides a blend
+            of gas that animals and plants use to grow and reproduce.
+            <br><br>
+        </p>
+
+
+    </div>
+    <iframe title="Mercury" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/earth"></iframe>
+
+    <div class="facts">
+        <h2>Earth Facts</h2>
+        <p>
+            Earth is the only planet known to support life. It offers liquid water, an oxygen-rich atmosphere, and protection from the Sun’s harmful radiation. <br>
+By exploring the cosmos, we learn more about Earth and how life evolved here. <br>
+Asteroids occasionally impact Earth and cause widespread damage. With proper planning, we can prevent this natural disaster from happening. <br>
+        </p>
+    </div>
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+           navlink.style.right = "0px";
+            navlink.style.display="flex";
+        }
+        function hidemenu() {
+           navlink.style.right = "-200px";
+           navlink.style.display="none";
+           location.reload();
+        }
+    </script>
+</body>
+
+</html>

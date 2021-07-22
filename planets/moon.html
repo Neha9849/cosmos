@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            The Moon, Preserving Earth's Origin Story
+        </h1>
+        <img src="../img/moon.jpg" alt="">
+    </div>
+    <div class="intro">
+        <h2>Why We Study Moon</h2>
+        From 1969 to 1972, 12 astronauts walked on the Moon as part of NASA’s Apollo program. Humans have not been back
+        since, and the Moon remains the only world besides Earth we’ve ever visited. The Moon lacks an Earth-like
+        atmosphere, and there is no wind or water to erase the Apollo astronauts’ footprints. The paths they walked can
+        still be seen from orbit—permanent monuments to one of humanity’s greatest achievements.
+        <br><br>
+        The Moon’s lack of air and lack of plate tectonics make it a geological time capsule. The surface bears the
+        scars of meteorites, lava flows, and the late heavy bombardment, an event roughly 4 billion years ago where the
+        inner solar system was pummeled by asteroids and comets. We know that life arose on Earth shortly thereafter, so
+        understanding what happened during this period of solar system history is a critical piece of our origin story.
+        <br><br>
+        There is water ice hidden in permanently shadowed craters at the Moon’s poles. Studying the ice could help us
+        understand where our own planet’s water came from. The ice is also a potential resource for future human
+        explorers: it could be harvested for breathable air, drinking water, and rocket propellant.
+
+        How much water does the Moon have? Based on data from India’s Chandrayaan-1 spacecraft and NASA’s Lunar
+        Reconnaissance Orbiter, scientists estimate the poles may have more than 600 billion kilograms of water ice,
+        enough to fill at least 240,000 Olympic-sized swimming pools. Learn more in our guide to water on the Moon.
+        <br><br>
+        The Moon’s proximity to Earth makes it a natural focus of many public and private human spaceflight efforts,
+        including NASA’s Artemis program, which seeks to land humans on the south pole in 2024. Sending astronauts to
+        the lunar surface can help us develop and prove the viability of technologies needed for deep space exploration,
+        including missions to Mars.
+        <br><br>
+    </div>
+    <iframe title="Moon" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/moon"></iframe>
+
+    <div class="facts">
+        <h2>Moon Facts</h2>
+        <p><strong>Surface temperature</strong>: -173°C (-280°F) to 127°C (260°F)<br><strong>Average distance from
+                Earth</strong>: 384,400 kilometers (238,855 miles), or about 30 Earth
+            widths<br><strong>Diameter</strong>: 3,475 kilometers (2,159 miles), Earth is 3.7 times
+            wider<br><strong>Volume</strong>: 22 billion km3 (5 billion mi3), the Moon could fit inside Earth 45.5
+            times<br><strong>Gravity</strong>: 1.6 m/s², or 16% that of Earth’s<br><strong>Solar day</strong>: 29.5
+            Earth days<br><strong>Atmosphere</strong>: Negligible</p>
+    </div>
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+           navlink.style.right = "0px";
+            navlink.style.display="flex";
+        }
+        function hidemenu() {
+           navlink.style.right = "-200px";
+           navlink.style.display="none";
+           location.reload();
+        }
+    </script>
+</body>
+
+</html>

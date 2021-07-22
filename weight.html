@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/age.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="content.html">EXPLORE</a></li>
+                <li><a href="age.html">AGE CALCULATOR</a></li>
+                <li><a href="weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="container">
+        <div class="box pbox">
+            <div class="boximg" >
+                <img src="img/cearth.png" alt="" srcset="">
+            </div>
+            <div >
+                <span class="enter">Enter Your Weight on Earth:</span>
+                <br>
+                <input type="number" name="eyears" id="eyears">
+                <br>
+                <button onclick="button()">Try It</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boximg">
+                <img src="img/cmercury.png" alt="" srcset="">
+            </div>
+            <div class="boxmatter" id="mercury">
+                0.00 Mercury weight
+            </div>
+        </div>
+        <div class="box">
+            <div class="boximg" >
+                <img src="img/cvenus.png" alt="" srcset="">
+            </div>
+            <div class="boxmatter" id="venus">
+                0.00 Venus weight
+            </div>
+        </div>
+        <div class="box">
+            <div class="boximg">
+                <img src="img/cmars.png" alt="" srcset="">
+            </div>
+            <div class="boxmatter" id="mars">
+                0.00 Mars weight
+            </div>
+        </div>
+        <div class="box">
+            <div class="boximg">
+                <img src="img/cjupiter.png" alt="" srcset="">
+            </div>
+            <div class="boxmatter" id="jupiter">
+                0.00 Jupiter weight
+            </div>
+        </div>
+        <div class="box">
+            <div class="boximg">
+                <img src="img/csaturn.png" alt="" srcset="">
+            </div>
+            <div class="boxmatter" id="saturn">
+                0.00 Saturn weight
+            </div>
+        </div>
+        <div class="box">
+            <div class="boximg">
+                <img src="img/curanus.png" alt="" srcset="">
+            </div>
+            <div class="boxmatter" id="uranus">
+                0.00 Uranus weight
+            </div>
+        </div>
+        <div class="box">
+            <div class="boximg">
+                <img src="img/cneptune.png" alt="" srcset="">
+            </div>
+            <div class="boxmatter" id="neptune">
+                0.00 Neptune weight
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script>
+    var navlink = document.getElementById("navlink");
+    function showmenu() {
+        navlink.style.right = "0";
+        navlink.style.display = "flex";
+    }
+    function hidemenu() {
+        navlink.style.right = "-200px";
+        navlink.style.display = "none";
+        location.reload();
+    }
+</script>
+<script>
+
+
+    function button() {
+        var x = document.getElementById("eyears").value;
+        console.log(x);
+
+        document.getElementById("mercury").innerHTML = Math.round(x * 0.38) + " Mercury Years";
+        document.getElementById("venus").innerHTML = Math.round(x * 0.91) + " Venus Years";
+        document.getElementById("mars").innerHTML =Math.round( x * 0.38) + " Mars Years";
+        document.getElementById("jupiter").innerHTML = Math.round(x * 2.34) + " Jupiter Years";
+        document.getElementById("saturn").innerHTML = Math.round(x * 0.93) + " Saturn Years";
+        document.getElementById("uranus").innerHTML = Math.round(x * 0.92) + " Uranus Years";
+        document.getElementById("neptune").innerHTML =Math.round( x * 1.12) + " Neptune Years";
+
+
+
+
+    }
+
+
+
+
+</script>
+
+</html>

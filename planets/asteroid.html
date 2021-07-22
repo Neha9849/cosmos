@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            Asteroids, Comets, and Other Small Worlds
+        </h1>
+        <img src="../img/asteroid.jpg" alt="">
+    </div>
+    <div class="intro">
+        <h2>Why We Study Asteroids</h2>
+        Because small worlds are scattered all over the solar system, we use different approaches to explore them.
+        Asteroids—in particular, near-Earth asteroids—are relatively easy to reach with a spacecraft, but their low
+        gravities make orbiting them a challenge. Many asteroids are close enough for us to image with Earth-based
+        radar, which helps us figure out their shapes.
+        <br><br>
+
+        Comets fly through the inner solar system at a variety of angles. Halley’s comet, for instance, enters the inner
+        solar system clockwise, from beneath our orbital plane. This means a spacecraft trying to rendezvous with the
+        comet must cancel out Earth's counter-clockwise momentum, pick up speed in the opposite direction, and tilt the
+        plane of its orbit significantly. This requires significant amounts of fuel, which is why solar sail missions
+        have been proposed for reaching certain comets.
+        <br><br>
+
+        The Oort cloud is too distant to visit for now, but the Kuiper Belt is within reach—providing you have some
+        extra time on your hands. New Horizons was the fastest object to ever leave Earth at the time of its launch, and
+        still took 9 years to reach Pluto.
+        <br><br>
+       <h2>Exploring asteroids</h2> 
+        NASA’s Jupiter-bound Galileo spacecraft made the first asteroid flyby in 1991, coming within 1600 kilometers of
+        Gaspra in the main asteroid belt. The pictures revealed an irregularly shaped world formed by debris from a
+        collision between other objects. Two years later in 1993, Galileo gave us a close look at another main belt
+        asteroid, Ida, which turned out to have a tiny moon now named Dactyl.
+         <br><br>
+        NASA’s NEAR Shoemaker spacecraft entered orbit around near-Earth asteroid Eros in 2000 and later touched down on
+        its surface—both firsts for any spacecraft. The agency in 2007 launched the Dawn spacecraft to orbit Vesta and
+        then Ceres, the two largest worlds in the main asteroid belt. Under the IAU’s planet classification system,
+        Vesta is an asteroid and Ceres is a dwarf planet.
+        <br><br>
+        Dawn found water-bearing minerals on Vesta’s surface and abundant water ice and organics on Ceres. Because these
+        materials evaporate close to the Sun, Vesta and Ceres either formed farther away or were struck by objects
+        carrying water and organics that formed farther away. Ceres has hundreds of bright spots formed by briny (salty)
+        water bubbling up from a subsurface reservoir. While icy moons like Enceladus and Europa have subsurface oceans
+        that are warmed by the pull of nearby giant planets, Ceres appears to have enough internal heat to keep its
+        subsurface water from freezing.
+        <br><br>
+        In 2010, Japan’s Hayabusa spacecraft returned samples from Itokawa, a peanut-shaped near-Earth asteroid a
+        half-kilometer long. Water found in the samples was remarkably similar to that of Earth’s oceans, indicating
+        much of our water could have come from similar asteroids.
+        <br><br>
+        Sample return missions from two more near Earth asteroids are in progress. Hayabusa2 is on its way back to Earth
+        now with samples from the diamond-shaped, rubble-pile asteroid Ryugu, while NASA’s OSIRIS-REx spacecraft is
+        preparing to collect samples from a similar asteroid Bennu.
+        <br><br>
+    </div>
+    <iframe title="Moon" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/asteroids"></iframe>
+
+
+
+
+        <script>
+            var navlink = document.getElementById("navlink");
+            function showmenu() {
+               navlink.style.right = "0px";
+                navlink.style.display="flex";
+            }
+            function hidemenu() {
+               navlink.style.right = "-200px";
+               navlink.style.display="none";
+               location.reload();
+            }
+        </script>
+</body>
+
+</html>

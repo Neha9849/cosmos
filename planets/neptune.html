@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            Uranus, the Sideways Planet
+        </h1>
+        <img src="../img/neptune.png" alt="">
+    </div>
+    <div class="intro">
+        <h2>Why We Study Neptune
+        </h2>
+        <p>
+            Neptune, along with its cousin Uranus, is the least-explored planet in our solar system, having been visited
+            by a spacecraft only once. Yet we’ve found more Neptune-sized worlds orbiting other stars than any other
+            type of planet. In order to understand other solar systems and figure out whether our own is unique, we need
+            to learn more about the windy blue world in our own backyard.
+            <br><br>
+            Like Jupiter and Saturn, Neptune’s atmosphere consists mostly of hydrogen and helium, but it also has
+            methane that absorbs red light, giving it a deep blue hue. Beneath the atmosphere lies an ocean of water,
+            ammonia, and methane, squeezed by intense pressures into a semi-solid state. For this reason we call Neptune
+            an ice giant, though the ice isn’t anything like what you’d find in your freezer, with temperatures likely
+            reaching thousands of degrees! Electric currents flowing through this icy-hot ocean may be responsible for
+            powering Neptune’s strong and unusually complex magnetic field.
+            <br><br>
+            Where Neptune formed and how it got its water isn’t clear. The disk of dust and gas that formed our solar
+            system probably didn’t contain enough material to form Neptune at its current location, 30 times farther
+            from the Sun than Earth. Like the other outer planets, it was probably born closer to the Sun before moving
+            outward, though the Sun would have evaporated its water had Neptune been too close. By figuring out where
+            Neptune was born and how the planet evolved, scientists learn what conditions in the early solar system were
+            like, around the time life arose on Earth.
+            <br><br>
+            Neptune has 14 known moons, half of which were likely captured by the planet’s gravity rather than forming
+            in place. Only one moon, Triton, is big enough to be spherical. It has planet-like characteristics similar
+            to Pluto such as a complex icy surface and thin nitrogen atmosphere, and may have started off as a
+            free-roaming dwarf planet. Geysers of nitrogen erupt from Triton’s surface that may be coming from a
+            subsurface water ocean. Future missions would help confirm whether the ocean exists, and whether it might be
+            habitable to life as we know it.
+            <br><br>
+            Just like Saturn, Neptune has a set of rings shepherded by small moons and made up of cold, icy particles.
+            But its outermost ring is not complete, comprising five distinct arcs. Scientists think the planet’s moon
+            Galatea prevents particles in these arcs from spreading out to complete the ring but no one knows for sure.
+            <br><br>
+
+        </p>
+
+
+    </div>
+    <iframe title="Neptune" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/neptune"></iframe>
+
+    <div class="facts">
+        <h2>Neptune Facts</h2>
+        <p>
+        <strong>Average temperature</strong>: -201°C (-331°F) where atmospheric pressure equals sea level
+            on Earth<br><strong>Average distance from Sun</strong>: 4,495 million kilometers (2,793 million miles), or
+            30 times farther from the Sun than Earth<br><strong>Diameter</strong>: 49,528 kilometers (30,775 miles),
+            Neptune is 3.9 times wider than Earth<br><strong>Volume</strong>: 63 trillion km3 (15 trillion mi3), Earth
+            could fit inside Neptune 63 times<br><strong>Gravity</strong>: 11 m/s², or 1.1 times that of
+            Earth’s<br><strong>Solar day</strong>: 16 Earth hours<br><strong>Solar year</strong>: 60,190 Earth
+            days<br><strong>Atmosphere</strong>: 80% hydrogen, 19% helium, 1% other gases
+        </p>
+    </div>
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+           navlink.style.right = "0px";
+            navlink.style.display="flex";
+        }
+        function hidemenu() {
+           navlink.style.right = "-200px";
+           navlink.style.display="none";
+           location.reload();
+        }
+    </script>
+</body>
+
+</html>

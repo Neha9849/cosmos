@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            Venus, Cloudy With A Chance of Life
+        </h1>
+        <img src="../img/venus.jpg" alt="">
+    </div>
+    <div class="intro">
+        <h2>Why We Study Venus</h2>
+        <p>
+            Venus is the hottest planet in the solar system, even though Mercury is twice as close to the Sun and
+            receives 4 times more solar energy. The reason? Venus’ thick, carbon dioxide atmosphere causes a runaway
+            greenhouse effect. At the surface Venus has an atmosphere 50 times denser than Earth’s, and average surface
+            temperatures of 470 degrees Celsius (878 degrees Fahrenheit)—hot enough to melt lead.
+            <br>
+            <br>
+
+            Venus is currently inhospitable, but it wasn’t always that way. Missions there have observed granite-like
+            rocks that require abundant water to form. In the solar system's early days when the Sun was cooler,
+            scientists think the planet may have had liquid water on the surface for 2 billion years—far longer than
+            Mars, which had liquid water for a relatively shorter 300 million years. Water is the key to life as we know
+            it, so did Venus once have life?
+            <br>
+            <br>
+
+            Scientists including Planetary Society co-founder Carl Sagan have predicted that life could currently exist
+            in Venus' upper atmosphere, which has Earth-like temperatures and pressures roughly 50 kilometers (31 miles)
+            above the planet's surface. There, mysterious dark patches absorb more than half the planet's solar energy.
+            In 2020 scientists announced they had found phosphine, a chemical strongly associated with life, in Venus's
+            clouds—though the existence of the signal is currently being reviewed.
+            <br>
+            <br>
+
+            We don't know how Venus transformed from a potentially habitable world to its current hellish state. By
+            studying Venus, scientists learn how Earth-like planets evolve and what conditions exist on Earth-sized
+            exoplanets. Venus also helps scientists model Earth’s climate, and serves as a cautionary tale on how
+            dramatically a planet’s climate can change.
+            <br>
+            <br>
+        </p>
+    </div>
+    <iframe title="Mercury" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/venus"></iframe>
+
+    <div class="facts">
+        <h2>Venus Facts</h2>
+        <p>
+            <strong>Surface temperature</strong>: 440°C (820°F) to 480°C (900°F)<br><strong>Average distance
+                from Sun</strong>: 108 million kilometers (67 million miles), or 38% closer to the Sun than
+            Earth<br><strong>Diameter</strong>: 12,104 kilometers (7,521 miles), Earth is just 5%
+            wider<br><strong>Volume</strong>: 928 billion km3 (223 billion mi3), Venus could fit inside Earth 1.1
+            times<br><strong>Gravity</strong>: 8.9 m/s², or 90% that of Earth’s<br><strong>Solar day</strong>: 243 Earth
+            days<br><strong>Solar year</strong>: 225 Earth days<br><strong>Atmosphere</strong>: 96% carbon dioxide, 3%
+            nitrogen, 1% other gases
+        </p>
+    </div>
+    
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+           navlink.style.right = "0px";
+            navlink.style.display="flex";
+        }
+        function hidemenu() {
+           navlink.style.right = "-200px";
+           navlink.style.display="none";
+           location.reload();
+        }
+    </script>
+</body>
+
+</html>

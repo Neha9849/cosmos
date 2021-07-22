@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+/*-----------navbar----------*/
+nav{
+    display: flex;
+    padding:  1% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+@media (min-width:700px) {
+    nav{
+        background-color: rgba(0, 0, 0, 0.822);
+        position: sticky;
+        top: 0;
+        padding: 7px 1%;
+    }
+}
+nav img{
+    width:150px;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px 12px;
+    font-family: 'Baloo Tammudu 2', cursive;
+
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height:2px ;
+    background:rgb(93, 37, 167) ;
+    display: block;
+    margin: auto;
+    transition:width 1s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+    color: white;
+}
+/*--------media queries navbar--------*/
+  @media(max-width:700px){
+      
+        .navlinks{
+            display: none;
+        }
+      nav{
+          position:unset;
+          background-color: black;
+
+      }
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks{
+        position: absolute;
+        background-color:rgba(39, 36, 36, 0.993);
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+        color: white;
+        font-size: 22px;
+
+    }
+    .navlinks ul{
+        padding: 10px;
+    }
+
+
+
+  }
+
+/*-----navbarcompleted-------------*/
+.title h1{
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px rgba(136, 135, 133, 0.781);
+    font-family: 'Baloo Tammudu 2', cursive;
+    
+}
+.title img{
+    width: 40vw;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.intro{
+    width: 60vw;
+    margin: auto;
+    line-height: 1.625;
+    font-size: 1.25rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+.facts h2{
+    margin: 10px 0;
+    font-family: "Quicksand",sans-serif;
+
+}
+.facts{
+    background-color: #edf2f7;
+    width: 40vw;
+    margin: auto;
+    padding: 20px;
+    font-family: "Quicksand",sans-serif;
+    font-weight: 200;
+    line-height: 1.625;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+iframe {
+    width: 50%;
+    height: 500px;
+    margin-left: 25vw;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../weight.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            Uranus, the Sideways Planet
+        </h1>
+        <img src="../img/Uranus.jpg" alt="">
+    </div>
+    <div class="intro">
+        <h2>Why We Study Uranus
+        </h2>
+        <p>
+            There’s no getting around it: for English speakers, Uranus is the butt of all planet jokes. But there’s much
+            more to this world than potty humor. Like its cousin Neptune, Uranus has only been visited by one
+            spacecraft. Yet most of the planets we’ve found around other stars are Uranus and Neptune-sized, so learning
+            this mysterious world teaches us about other solar systems and whether our own is unique.
+            <br><br>
+            Uniquely among our planets, Uranus and the orbits of its rings and moons float through space sideways. How
+            this happened isn’t known for sure. Another large world could have crashed into the planet long ago, or a
+            larger, previous ring system could have caused Uranus to wobble and tip over. Figuring out what happened
+            would give scientists important insights into how planets evolve.
+            <br><br>
+            Uranus’ atmosphere is mostly hydrogen and helium like Jupiter and Saturn, with traces of methane that absorb
+            red light and give the planet its cyan appearance. Beneath the atmosphere is an exotic slush of partially
+            frozen water, ammonia, and methane. For this reason we call Uranus an ice giant, even though the ice isn’t
+            like anything you’d put in your drink: super-compressed ice can reach temperatures of thousands of degrees!
+            <br><br>
+            Uranus lies 20 times further from the sun than Earth. At this distance, the disk of gas and dust that formed
+            our solar system 4.5 billion years ago was probably too thin to form Uranus. Like Neptune, Uranus was
+            probably born closer to the sun before migrating outward. Piecing together what happened would tell us what
+            the early solar system was like before life arose on Earth.
+            <br><br>
+            Uranus’ five largest moons in order of ascending size are Miranda, Ariel, Umbriel, Oberon, and Titania. The
+            latter two may be warmed enough by gravitational tugs from Uranus and other moons to create liquid water
+            beneath their surfaces. Investigating this possibility would help us learn about the possibilities for life
+            far outside the habitable zone, the not-too-hot, not-too-cold region around stars where liquid can exist on
+            planetary surfaces.
+            <br><br>
+        </p>
+
+
+    </div>
+    <iframe title="Uranus" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/uranus"></iframe>
+
+    <div class="facts">
+        <h2>Uranus Facts</h2>
+        <p>
+        <strong>Average temperature</strong>: -195°C (-320°F) where atmospheric pressure equals sea level
+            on Earth<br><strong>Average distance from Sun</strong>: 2,873 million kilometers (1,785 million miles), or
+            19 times farther from the Sun than Earth<br><strong>Diameter</strong>: 51,118 kilometers (31,763 miles),
+            Uranus is 4 times wider than Earth<br><strong>Volume</strong>: 68 trillion km3 (16 trillion mi3), Earth
+            could fit inside Uranus 68 times<br><strong>Gravity</strong>: 8.7 m/s², or 89% that of
+            Earth’s<br><strong>Solar day</strong>: 17 Earth hours<br><strong>Solar year</strong>: 30,687 Earth
+            days<br><strong>Atmosphere</strong>: 83% hydrogen, 15% helium, 2% methane and other gases<br>
+        </p>
+    </div>
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+           navlink.style.right = "0px";
+            navlink.style.display="flex";
+        }
+        function hidemenu() {
+           navlink.style.right = "-200px";
+           navlink.style.display="none";
+           location.reload();
+        }
+    </script>
+</body>
+
+</html>

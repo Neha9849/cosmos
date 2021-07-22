@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            Jupiter, the Planet with a Solar System of Its Own
+        </h1>
+        <img src="../img/jupiter.png" alt="">
+    </div>
+    <div class="intro">
+        <h2>Why We Study Jupiter
+        </h2>
+        <p>
+            Named after the king of the gods in Roman mythology, Jupiter is a stunning sight to behold. Its red, orange,
+            and yellow swirls, spots, and bands are visible even from small backyard telescopes. Astronomers have
+            observed the planet’s Great Red Spot, a raging storm larger than Earth, for at least 200 years.
+            <br><br>
+            Jupiter was the first planet in our solar system to form. It was probably born much closer to the Sun before
+            migrating to its current position about 4 billion years ago, scattering asteroids and comets with its
+            gravity in the process. Some of those asteroids and comets slammed into early Earth, possibly bringing water
+            here in the process—the key ingredient for life as we know it.
+            <br><br>
+            Many exoplanets—planets in other solar systems—we have discovered are Jupiter-like worlds close to their
+            stars, reinforcing the idea that our own solar system’s large planets have moved from their original
+            positions. By studying Jupiter and comparing it to similar exoplanets, we learn how solar systems evolve and
+            the possibilities for life elsewhere.
+            <br><br>
+            Jupiter has a faint ring system and at least 79 moons, 4 of which are active, planet-like worlds ranging in
+            size from just smaller than Earth’s Moon to larger than Mercury. All but Io likely have liquid-water oceans
+            under their surfaces, making
+            them possible havens for life as we know it. Europa’s ocean in particular may be the most biologically
+            promising environment beyond Earth for life. Jupiter challenges our perceptions about where life can exist
+            in the universe.
+            <br><br>
+        </p>
+
+
+    </div>
+    <iframe title="Jupiter" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/jupiter"></iframe>
+
+    <div class="facts">
+        <h2>Jupiter Facts</h2>
+        <p>
+        <strong>Average temperature</strong>: -108°C (-162°F) where atmospheric pressure equals sea level
+            on Earth<br><strong>Average distance from Sun</strong>: 779 million kilometers (484 million miles), or 5.2
+            times farther from the Sun than Earth<br><strong>Diameter</strong>: 142,984 kilometers (88,846 miles),
+            Jupiter is 11.2 times wider than Earth<br><strong>Volume</strong>: 1,431 trillion km3 (343 trillion mi3),
+            Earth could fit inside Jupiter 1,431 times<br><strong>Gravity</strong>: 23.1 m/s², or 2.4 times that of
+            Earth’s<br><strong>Solar day</strong>: 10 Earth hours<br><strong>Solar year</strong>: 4,333 Earth
+            days<br><strong>Atmosphere</strong>: 90% hydrogen, 10% helium, less than 1% other gases</p>
+    </div>
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+           navlink.style.right = "0px";
+            navlink.style.display="flex";
+        }
+        function hidemenu() {
+           navlink.style.right = "-200px";
+           navlink.style.display="none";
+           location.reload();
+        }
+    </script>
+</body>
+
+</html>

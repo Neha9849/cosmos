@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets</title>
+    <link rel="stylesheet" href="../stylesheets/planets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+        <div class="navlinks" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../content.html">EXPLORE</a></li>
+                <li><a href="../age.html">AGE CALCULATOR</a></li>
+                <li><a href="../weight.html">WEIGHT CALCULATOR</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+                <li><a href="../about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="title">
+        <h1>
+            Mars, the Red Planet
+        </h1>
+        <img src="../img/mars2.jpg" alt="">
+    </div>
+    <div class="intro">
+        <h2>Why We Study Mars</h2>
+        <p>
+            David Bowie wasn't the first person to ask "Is there life on Mars?" This question has intrigued humans for
+            centuries. Early telescope observations in the 18th and 19th centuries seemed to show a planet not all that
+            different from Earth, with ice caps, seasons, and features that were mistaken for seas and artificial
+            canals. A few scientists even thought that Mars was inhabited by intelligent life.
+            <br><br>
+
+            We now know that Mars is very cold and dry, with no breathable atmosphere and no global magnetic field to
+            protect it from the Sun's radiation. But it wasn't always that way. Space missions have shown us that Mars
+            once had liquid water on the surface and could have been hospitable to life as we know it. Today, there may
+            still be life beneath the surface, with access to water and protection from radiation and extreme
+            temperatures.
+            <br><br>
+            We know Mars was habitable to life as we know it for at least some periods of time around 3 or 4 billion
+            years ago. But we don't know whether the planet was warm and wet long enough for life to arise, or mostly
+            cold and dry with only brief intervals that could have supported life.
+            <br><br>
+            How did Mars go from a potential life-supporting oasis to a cold, dry
+            desert? Does life still flourish underground? The answers to these
+            questions will teach us more about where we come from and whether we are alone in the cosmos.
+            <br><br>
+        </p>
+
+
+    </div>
+    <iframe title="mars" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen" src="https://eyes.nasa.gov/apps/orrery/#/mars"></iframe>
+
+    <div class="facts">
+        <h2>Mars Facts</h2>
+        <p>
+            <strong>Surface temperature</strong>: -140<strong>°</strong>C (-284<strong>°</strong>F) to
+            30<strong>°</strong>C (86<strong>°</strong>F)<br><strong>Average distance from Sun</strong>: 228 million
+            kilometers (142 million miles), or 1.7 times farther from the Sun than Earth<br><strong>Diameter</strong>:
+            6,792 kilometers (4,220 miles), Earth is 1.9 times wider<br><strong>Volume</strong>: 163 billion km3 (39
+            billion mi3), Mars could fit inside Earth 6.1 times<br><strong>Gravity</strong>: 3.7 m/s², or 37% that of
+            Earth’s<br><strong>Solar day</strong>: 25 Earth hours<br><strong>Solar year</strong>: 687 Earth
+            days<br><strong>Atmosphere</strong>: 95% carbon dioxide, 3% nitrogen, 1.5% argon, 0.5% other gases
+        </p>
+    </div>
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+           navlink.style.right = "0px";
+            navlink.style.display="flex";
+        }
+        function hidemenu() {
+           navlink.style.right = "-200px";
+           navlink.style.display="none";
+           location.reload();
+        }
+    </script>
+</body>
+
+</html>
